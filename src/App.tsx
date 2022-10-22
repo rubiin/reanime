@@ -34,7 +34,7 @@ function App() {
       <img src={SearchIcon} onClick={()=> searchMovie(searchTerm)}/>
     </div>
     <div className='container'>
-      {animes?.length > 0 ? animes.map((anime: IAnime,index: number) => <AnimeCard key={index} anime={anime} />): <div className='empty'><h1>No movies found</h1></div>}
+      {animes?.length > 0 ? animes.map((anime: IAnime,index: number) => <AnimeCard key={index} anime={anime} />): <div className='empty'><h1>No anime found</h1></div>}
     </div>
   </div>;
 }
