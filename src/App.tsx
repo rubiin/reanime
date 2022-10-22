@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import './App.css';
 import SearchIcon from './assets/search.svg';
+import NarutoIcon from './assets/naruto.png';
 import { IAnime, AnimeCard } from './components/AnimeCard';
+import './App.css';
 
 const API_URL = 'https://animeapi-demo.herokuapp.com/gogoanime';
 
@@ -25,8 +26,13 @@ function App() {
 
 
   return <div className="app">
+
+    <div className="container">
+    <img src={NarutoIcon} style={{padding: "0 6px 0 6px", height: "60px"}} />
     <h1>Animeland</h1>
+    </div>
     <div className='search'>
+
       <input type='text' placeholder='Search for an anime'
         value={searchTerm}
         onChange={(e) => setSearchterm(e.target.value)}

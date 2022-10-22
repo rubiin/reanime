@@ -21,10 +21,9 @@ export const AnimeCard = (props: { anime: IAnime }) => {
       <img src={animeImg !== 'N/A' ? animeImg : 'https://via.placeholder.com/400'} alt={animeTitle} />
     </div>
     <div>
-      <span>{animeUrl}</span>
+      <a href={animeUrl}>{animeUrl}</a>
       <h3>{status}</h3>
     </div>
-    <div>
-    </div>
+
   </div>)
 }
